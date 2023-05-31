@@ -1,3 +1,3 @@
-# Páginas extras da Weduu
+# Página de manutenção do Ped+
 
-Páginas web extras dos sistemas da weduu e que não precisam serem desenvolvidos em um framework.
+Mostrada apenas quando o ped+ estiver em manutenção.
