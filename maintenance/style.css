@@ -1,0 +1,166 @@
+html,
+body {
+  background-color: #f0cbae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mobile-frame {
+  height: 60vh;
+  width: auto;
+  position: relative;
+}
+
+.img-mobile-frame {
+  display: block;
+}
+
+.img-browser-frame {
+  display: none;
+  max-height: 540px !important;
+}
+
+.person1,
+.person2 {
+  height: 400px;
+  position: absolute;
+  display: none;
+  top: 30%;
+}
+
+.person1 {
+  left: 5%;
+}
+
+.person2 {
+  right: 5%;
+}
+
+.gear-icon {
+  position: absolute;
+
+  top: 50px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pedmais-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tools-icon {
+  position: absolute;
+
+  bottom: 80px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+
+  animation-name: tickle;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 1000px) {
+    .text {
+        font-size: 1.6em;
+    }
+  .img-mobile-frame {
+    display: none;
+  }
+
+  .img-browser-frame {
+    display: block;
+    height: 100%;
+  }
+
+  .gear-icon {
+    top: 100px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .pedmais-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tools-icon {
+    position: absolute;
+
+    bottom: 6%;
+    right: 6%;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .person1 {
+    display: block;
+  }
+
+  .person2 {
+    display: block;
+  }
+}
+
+.text {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.text h1 {
+  color: #6d6e71;
+}
+
+.text p {
+  color: #4b4b4b;
+}
+
+@keyframes spin {
+  from {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  to {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tickle {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  80% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
